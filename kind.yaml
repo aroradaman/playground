@@ -8,5 +8,8 @@ networking:
 nodes:
   - role: control-plane
   - role: worker
+    extraPortMappings:
+      - containerPort: 10249
+        hostPort: 10249
   - role: worker
   - role: worker
